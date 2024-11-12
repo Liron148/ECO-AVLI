@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>ניהול סיכונים - מערכת ניהול סיכוני אקלים</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #2c3e50;
+            padding: 10px 0;
+            border-bottom: 2px solid #eee;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .nav-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .risk-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 4px solid #e74c3c;
+        }
+        .risk-level {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-right: 10px;
+            color: white;
+        }
+        .high {
+            background-color: #e74c3c;
+        }
+        .medium {
+            background-color: #f39c12;
+        }
+        .low {
+            background-color: #27ae60;
+        }
+        .action-button {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .mitigation-steps {
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ניהול סיכוני אקלים</h1>
+        </div>
+
+        <div class="nav">
+    <button class="nav-button" onclick="window.location.href='index.html'">דף הבית</button>
+    <button class="nav-button" onclick="window.location.href='dashboard.html'">דשבורד</button>
+    <button class="nav-button" onclick="window.location.href='regulations.html'">דרישות רגולציה</button>
+    <button class="nav-button" onclick="window.location.href='reports.html'">דוחות</button>
+</div>
+
+        <div class="risk-grid">
+            <div class="risk-card">
+                <span class="risk-level high">סיכון גבוה</span>
+                <h3>רעידת אדמה במרכז הארץ</h3>
+                <p>השפעה פוטנציאלית על נכסי נדל"ן ותשתיות בנקאיות</p>
+                <div class="mitigation-steps">
+                    <h4>צעדי מניעה והיערכות:</h4>
+                    <ul>
+                        <li>ביטוח מקיף לנכסים</li>
+                        <li>תוכנית המשכיות עסקית</li>
+                        <li>גיבוי מערכות קריטיות</li>
+                    </ul>
+                </div>
+                <button class="action-button">עדכון תוכנית מוכנות</button>
+            </div>
+
+            <div class="risk-card">
+                <span class="risk-level high">סיכון גבוה</span>
+                <h3>שינויי אקלים קיצוניים</h3>
+                <p>השפעה על פעילות לקוחות בענפי חקלאות ונדל"ן</p>
+                <div class="mitigation-steps">
+                    <h4>צעדי מניעה והיערכות:</h4>
+                    <ul>
+                        <li>הערכת תיק אשראי</li>
+                        <li>דיווח סיכונים תקופתי</li>
+                        <li>התאמת מדיניות אשראי</li>
+                    </ul>
+                </div>
+                <button class="action-button">עדכון הערכת סיכונים</button>
+            </div>
+
+            <div class="risk-card">
+                <span class="risk-level medium">סיכון בינוני</span>
+                <h3>שינויי רגולציה</h3>
+                <p>דרישות חדשות בנושאי ESG והשפעתן על פעילות הבנק</p>
+                <div class="mitigation-steps">
+                    <h4>צעדי מניעה והיערכות:</h4>
+                    <ul>
+                        <li>מעקב רגולטורי שוטף</li>
+                        <li>התאמת מדיניות</li>
+                        <li>הכשרת עובדים</li>
+                    </ul>
+                </div>
+                <button class="action-button">עדכון נהלים</button>
+            </div>
+
+            <div class="risk-card">
+                <span class="risk-level low">סיכון נמוך</span>
+                <h3>מעבר לאנרגיה ירוקה</h3>
+                <p>השפעה על תיק ההשקעות והלוואות בתחום האנרגיה</p>
+                <div class="mitigation-steps">
+                    <h4>צעדי מניעה והיערכות:</h4>
+                    <ul>
+                        <li>גיוון תיק השקעות</li>
+                        <li>מימון פרויקטים ירוקים</li>
+                        <li>פיתוח מוצרים חדשים</li>
+                    </ul>
+                </div>
+                <button class="action-button">עדכון אסטרטגיה</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
